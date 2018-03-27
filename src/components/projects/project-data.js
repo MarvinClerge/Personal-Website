@@ -31,8 +31,8 @@ const technology = {
 
 const coding = {
   name: "Coding Website",
-  date: "March 2018"
-  decription: "An application that allows users to create, evaluate and take code challenges in sandboxed environment using Javascript ES5",
+  date: "March 2018",
+  description: "An application that allows users to create, evaluate and take code challenges in sandboxed environment using Javascript ES5",
   tech: [technology.react, technology.rails, technology.postgres, technology.ace, technology.interpreter],
   frontend: "https://github.com/MarvinClerge/Coding-Website",
   backend: "https://github.com/MarvinClerge/Coding-Website-Backend",
@@ -44,7 +44,7 @@ const coding = {
     "In the MY CODE tab of the menu if logged in users can view, load and delete their code",
     "In the CHALLENGES tab of the menu users can take on challenges created by other users. If logged in users can create challenges. When running a challenge the OUTPUT tab will change to only allow running the challenge. Users can switch back to normal by resetting the editor or loading code."
   ],
-  screenshots: [
+  images: [
     "https://raw.githubusercontent.com/MarvinClerge/Coding-Website/master/screen1.png",
     "https://raw.githubusercontent.com/MarvinClerge/Coding-Website/master/screen2.png",
     "https://raw.githubusercontent.com/MarvinClerge/Coding-Website/master/screen3.png"
@@ -54,8 +54,8 @@ const coding = {
 
 const goodeats = {
   name: "GoodEats",
-  date: "Febuary 2018"
-  decription: "An application that allows users to discover new restaurants and bars based on their current location",
+  date: "Febuary 2018",
+  description: "An application that allows users to discover new restaurants and bars based on their current location",
   tech: [technology.react, technology.rails, technology.postgres, technology.places],
   frontend: "https://github.com/MarvinClerge/GoodEats",
   backend: "https://github.com/MarvinClerge/GoodEats-Backend",
@@ -65,7 +65,7 @@ const goodeats = {
     "After a search in the main page the results will appear as cards below. Click on a card to be taken to the locations page and view more information.",
     "Users can comment on a location in its page."
   ],
-  screenshots: [
+  images: [
     "https://raw.githubusercontent.com/MarvinClerge/GoodEats/master/screen1.png",
     "https://raw.githubusercontent.com/MarvinClerge/GoodEats/master/screen2.png"
   ],
@@ -73,9 +73,9 @@ const goodeats = {
 }
 
 const calibre = {
-  name: "GoodEats",
-  date: "January 2018"
-  decription: "Calibre is a web application that allows users to search, play, and save music and videos to a playlist.",
+  name: "Calibre",
+  date: "January 2018",
+  description: "Calibre is a web application that allows users to search, play, and save music and videos to a playlist.",
   tech: [technology.rails, technology.postgres, technology.javascript],
   frontend: "https://github.com/MarvinClerge/Calibre",
   backend: "https://github.com/MarvinClerge/Calibre-Backend",
@@ -87,7 +87,7 @@ const calibre = {
     "If a user is logged in they can like a media item by clicking the fire button, and/or comment on media item.",
     "On each media item card a user can click play to view the media content. If the user clicks the + button it will be added to their playlist. The user can only add the media item to their playlist once."
   ],
-  screenshots: [
+  images: [
     "https://raw.githubusercontent.com/MarvinClerge/Calibre/master/screen1.png",
     "https://raw.githubusercontent.com/MarvinClerge/Calibre/master/screen2.png"
   ],

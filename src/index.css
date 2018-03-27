@@ -1,6 +1,7 @@
 @import url("./css/header.css");
 @import url("./css/person.css");
 @import url("./css/project-container.css");
+@import url("./css/project-card.css");
 
 body {
   margin: 0;

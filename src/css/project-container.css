@@ -1,7 +1,17 @@
 .project-container {
-  
+  text-align: center;
+  padding: 1rem 0 1rem 0;
+}
+
+.project-container-projects {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 @media screen and (max-width: 1000px) {
-
+  .project-container {
+    flex-direction: column;
+    align-items: center;
+  }
 }
