@@ -1,0 +1,36 @@
+.person {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 0 4rem 0;
+  background: rgb(223, 223, 223)
+}
+
+.person-image {
+  margin: 0 2rem 0 0;
+  border-radius: 100px;
+  border: 1px solid rgb(149, 149, 149);
+}
+
+.person-summary {
+  margin: 0 0 0 2rem;
+  width: 45%;
+}
+
+@media screen and (max-width: 1000px) {
+  .person {
+    flex-direction: column;
+    margin: 0;
+    padding: 2rem 0 0 0;
+  }
+  .person-image {
+    margin: 0;
+  }
+  .person-summary {
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0 1rem 0;
+    width: 80%;
+    font-size: 1.2rem;
+  }
+}

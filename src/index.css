@@ -1,0 +1,12 @@
+@import url("./css/header.css");
+@import url("./css/person.css");
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.app {
+
+}
