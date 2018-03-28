@@ -21,7 +21,7 @@ const technology = {
   },
   interpreter: {
     name: "JS-Interpreter",
-    use: "Used to evaluate JavaScript code in a sandboxed environment"
+    use: "Used to evaluate JavaScript code in a sandboxed environment."
   },
   places: {
     name: "GooglePlaces",
@@ -32,7 +32,7 @@ const technology = {
 const coding = {
   name: "Coding Website",
   date: "March 2018",
-  description: "An application that allows users to create, evaluate and take code challenges in sandboxed environment using Javascript ES5",
+  description: "An application that allows users to create, evaluate and take code challenges in sandboxed environment using Javascript ES5.",
   tech: [technology.react, technology.rails, technology.postgres, technology.ace, technology.interpreter],
   frontend: "https://github.com/MarvinClerge/Coding-Website",
   backend: "https://github.com/MarvinClerge/Coding-Website-Backend",
@@ -66,7 +66,7 @@ const coding = {
 const goodeats = {
   name: "GoodEats",
   date: "Febuary 2018",
-  description: "An application that allows users to discover new restaurants and bars based on their current location",
+  description: "An application that allows users to discover new restaurants and bars based on their current location.",
   tech: [technology.react, technology.rails, technology.postgres, technology.places],
   frontend: "https://github.com/MarvinClerge/GoodEats",
   backend: "https://github.com/MarvinClerge/GoodEats-Backend",

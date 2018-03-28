@@ -4,15 +4,26 @@
   background: rgb(223, 223, 223);
 }
 
-.technology-container > div{
+.technology-container > div {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-@media screen and (max-width: 1000px) {
-  .technology-container {
+.technology-container > .mobile {
+  display: none
+}
 
+@media screen and (max-width: 1000px) {
+  .technology-container > div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .technology-container > .mobile {
+    display: inline;
+  }
+  .technology-container > .desktop {
+    display: none
   }
 }

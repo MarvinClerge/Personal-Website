@@ -11,7 +11,8 @@ const TechnologyContainer = props => {
   return(
     <div className="technology-container">
       <h3>Technology Used</h3>
-      <p>(hover for details)</p>
+      <p className="desktop">(hover for details)</p>
+      <p className="mobile">(tap for details)</p>
       <div>
         {mapTechnologies()}
       </div>
