@@ -1,4 +1,5 @@
 import React, {Component} from 'react'
+import { Link } from 'react-router-dom'
 
 class Header extends Component {
 
@@ -7,26 +8,27 @@ class Header extends Component {
       <div className="header">
         <div className="header-main">
           <a href="" className="header-main-link">Projects</a>
-          <a href=""><div className="header-logo"></div></a>
+          <Link to="/"><div className="header-logo"></div></Link>
           <a href="" className="header-main-link">About Me</a>
         </div>
 
         <div className="header-links">
-          <a href="https://github.com/MarvinClerge" target="_blank">
+          <Link to="https://github.com/MarvinClerge" target="_blank" rel="noopener noreferrer">
             <img className="header-link" src={require('../images/icons/github.png')} alt="github" />
-            </a>
+          </Link>
 
-            <a href="https://www.linkedin.com/in/marvinclerge/" target="_blank">
+          <Link to="https://www.linkedin.com/in/marvinclerge/" target="_blank" rel="noopener noreferrer">
             <img className="header-link" src={require('../images/icons/linkedin.png')} alt="linkedin" />
-            </a>
+          </Link>
 
-            <a href="https://twitter.com/MarvinClerge" target="_blank">
-              <img className="header-link" src={require('../images/icons/twitter.png')} alt="twitter" />
-              </a>
+          <Link to="https://twitter.com/MarvinClerge" target="_blank" rel="noopener noreferrer">
+            <img className="header-link" src={require('../images/icons/twitter.png')} alt="twitter" />
+          </Link>
 
-              <a href="https://medium.com/@clergemarvin/" target="_blank">
+          <Link to="https://medium.com/@clergemarvin/" target="_blank" rel="noopener noreferrer">
             <img className="header-link" src={require('../images/icons/medium.png')} alt="medium" />
-          </a>
+          </Link>
+          
         </div>
       </div>
     )
