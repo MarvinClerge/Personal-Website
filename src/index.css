@@ -2,6 +2,7 @@
 @import url("./css/person.css");
 @import url("./css/project-container.css");
 @import url("./css/project-card.css");
+@import url("./css/project-slideshow.css");
 
 body {
   margin: 0;
