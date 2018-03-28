@@ -1,0 +1,18 @@
+.technology-container {
+  text-align: center;
+  padding: 1rem;
+  background: rgb(223, 223, 223);
+}
+
+.technology-container > div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 1000px) {
+  .technology-container {
+
+  }
+}

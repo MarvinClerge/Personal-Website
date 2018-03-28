@@ -1,0 +1,10 @@
+.media-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 1000px) {
+  .media-container {
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,15 @@
+.media-video {
+  padding: 1rem;
+  width: 40%;
+  text-align: center;
+}
+
+.media-video > iframe {
+  width: 100%;
+}
+
+@media screen and (max-width: 1000px) {
+  .media-video {
+    width: 90%;
+  }
+}

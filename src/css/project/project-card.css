@@ -1,0 +1,33 @@
+.project-card {
+  text-align: center;
+  width: 20rem;
+  margin: 1rem;
+  padding: .5rem;
+  background: #e8e8e8;
+  text-decoration: none;
+}
+
+.project-card-link {
+  text-decoration: none;
+  color: black;
+}
+
+.project-card-header > h2 {
+  text-decoration: underline;
+}
+
+.project-card > img {
+  width: 100%;
+  border: 1px solid rgb(149, 149, 149);
+}
+
+@media screen and (max-width: 1000px) {
+  .project-card-header > h2 {
+    border-bottom: 1px solid rgb(156, 156, 156);
+    padding: 0 0 2rem 0;
+  }
+
+  .project-card > img {
+    display: none;
+  }
+}

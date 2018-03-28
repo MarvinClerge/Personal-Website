@@ -1,0 +1,28 @@
+.technology{
+  max-width: 10rem;
+  padding: 1rem;
+  margin: 1rem;
+  white-space: pre-line;
+}
+
+.technology:hover > .technology-use {
+  border: 1px solid rgb(162, 162, 162);
+  display: inline;
+  text-align: center;
+  background: #ececec;
+  position: absolute;
+  max-width: 20rem;
+  margin-left: -6rem;
+  padding: 1rem;
+}
+
+.technology-use {
+  display: none;
+}
+
+
+@media screen and (max-width: 1000px) {
+  .technology{
+
+  }
+}
