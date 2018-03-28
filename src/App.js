@@ -3,7 +3,8 @@ import {Route} from 'react-router-dom'
 // import logo from './logo.svg';
 import Header from './components/header'
 import Person from './components/person'
-import ProjectContainer from './components/projects/project-container'
+import ProjectContainer from './components/projects/multiple/project-container'
+import Project from './components/projects/single/project'
 
 class App extends Component {
   render() {
@@ -11,6 +12,7 @@ class App extends Component {
       <div className="app">
         <Header />
 
+        {/* Main Page */}
         <Route exact path="/" render={routerProps => {
           return(
             <div>
@@ -19,6 +21,16 @@ class App extends Component {
             </div>
           )
         }}/>
+
+        {/* Project Page */}
+        <Route path="/project/" render={routerProps => {
+          return(
+            <div>
+              <Project router={routerProps} />
+            </div>
+          )
+        }}/>
+
       </div>
     );
   }
