@@ -3,6 +3,9 @@
 @import url("./css/project-container.css");
 @import url("./css/project-card.css");
 @import url("./css/project-slideshow.css");
+@import url("./css/project-information.css");
+@import url("./css/technology.css");
+
 
 body {
   margin: 0;
