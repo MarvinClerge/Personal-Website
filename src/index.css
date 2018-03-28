@@ -1,19 +1,20 @@
 @import url("./css/header.css");
 @import url("./css/person.css");
-@import url("./css/project-container.css");
-@import url("./css/project-card.css");
-@import url("./css/project-slideshow.css");
-@import url("./css/project-information.css");
-@import url("./css/technology-container.css");
-@import url("./css/technology.css");
+
+@import url("./css/project/project-card.css");
+@import url("./css/project/project-header.css");
+@import url("./css/project/project-container.css");
+
+@import url("./css/media/media-video.css");
+@import url("./css/media/media-container.css");
+@import url("./css/media/media-slideshow.css");
+
+@import url("./css/technology/technology.css");
+@import url("./css/technology/technology-container.css");
 
 
 body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-}
-
-.app {
-
 }
