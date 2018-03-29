@@ -12,7 +12,7 @@ const ProjectCard = props => {
   }
 
   return(
-    <Link to={"/project/" + props.name.toLowerCase().replace(/ /g, "-")} className="project-card-link">
+    <Link to={`/project/${props.name.toLowerCase().replace(/ /g, "-")}`} className="project-card-link">
       <div className="project-card">
         <div className="project-card-header">
           <h2>{props.name}</h2>

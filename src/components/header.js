@@ -5,11 +5,11 @@ class Header extends Component {
 
   render(){
     return(
-      <div className="header">
+      <div className="header" id="header">
         <div className="header-main">
           <a href="" className="header-main-link">Projects</a>
           <Link to="/"><div className="header-logo"></div></Link>
-          <a href="" className="header-main-link">About Me</a>
+          <Link to="/about" className="header-main-link">About Me</Link>
         </div>
 
         <div className="header-links">
@@ -28,7 +28,7 @@ class Header extends Component {
           <Link to="https://medium.com/@clergemarvin/" target="_blank" rel="noopener noreferrer">
             <img className="header-link" src={require('../images/icons/medium.png')} alt="medium" />
           </Link>
-          
+
         </div>
       </div>
     )

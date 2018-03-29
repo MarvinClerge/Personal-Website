@@ -1,11 +1,15 @@
 import React, { Component } from 'react';
-import {Route} from 'react-router-dom'
+import { Route } from 'react-router-dom'
 // import logo from './logo.svg';
+
 import Header from './components/header'
-import Footer from './components/footer'
 import Person from './components/person'
-import ProjectContainer from './components/projects/multiple/project-container'
+import Footer from './components/footer'
+
+import AboutContainer from './components/about/about-container'
+
 import Project from './components/projects/single/project'
+import ProjectContainer from './components/projects/multiple/project-container'
 
 class App extends Component {
   render() {
@@ -15,6 +19,7 @@ class App extends Component {
 
         {/* Main Page */}
         <Route exact path="/" render={routerProps => {
+          window.scrollTo(0,0);
           return(
             <div>
               <Person />
@@ -25,9 +30,20 @@ class App extends Component {
 
         {/* Project Page */}
         <Route path="/project/" render={routerProps => {
+          window.scrollTo(0,0);
           return(
             <div>
               <Project router={routerProps} />
+            </div>
+          )
+        }}/>
+
+        {/* About Page */}
+        <Route path="/about" render={routerProps => {
+          window.scrollTo(0,0);
+          return(
+            <div>
+              <AboutCont />
             </div>
           )
         }}/>

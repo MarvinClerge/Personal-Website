@@ -7,6 +7,10 @@
 @import url("./css/project/project-feature.css");
 @import url("./css/project/project-container.css");
 
+@import url("./css/about/about-card.css");
+@import url("./css/about/about-multi.css");
+@import url("./css/about/about-container.css");
+
 @import url("./css/media/media-video.css");
 @import url("./css/media/media-container.css");
 @import url("./css/media/media-slideshow.css");
@@ -19,4 +23,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
+}
+
+.grey {
+  background: rgb(223, 223, 223);
 }
