@@ -42,6 +42,64 @@
   margin: 0 1rem 0 1rem;
 }
 
+.contact {
+  z-index: 1;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.45);
+  margin: -2rem 0 0 0;
+  width: 100%;
+  height: 100%;
+  animation: fadein;
+  animation-duration: .2s;
+}
+
+.contact-content {
+  top: 35%;
+  left: 35%;
+  width: 30%;
+  display: flex;
+  position: fixed;
+  background: white;
+  border-radius: 5px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  border: 1px solid rgb(149, 149, 149);
+  font-family: "Arial Black", Gadget, sans-serif;
+}
+
+.contact-item-top {
+  padding: 3em 0 1rem 0;
+  margin: 0
+}
+
+.contact-item {
+  padding: 1rem 0 1rem 0;
+  background: none;
+  margin: 0
+}
+
+.contact-exit {
+  position: absolute;
+  left: 5%;
+  top: 10%;
+}
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+.fadeout {
+  animation: fadeout;
+  animation-duration: .3s;
+}
+
+@keyframes fadeout {
+  from {opacity: 1;}
+  to {opacity: 0;}
+}
+
 @media screen and (max-width: 1000px) {
   .header-main {
     padding: 0 0 1rem 0;

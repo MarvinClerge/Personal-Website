@@ -12,6 +12,7 @@ import Project from './components/projects/single/project'
 import ProjectContainer from './components/projects/multiple/project-container'
 
 class App extends Component {
+
   render() {
     return (
       <div className="app">
