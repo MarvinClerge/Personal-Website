@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {Route} from 'react-router-dom'
 // import logo from './logo.svg';
 import Header from './components/header'
+import Footer from './components/footer'
 import Person from './components/person'
 import ProjectContainer from './components/projects/multiple/project-container'
 import Project from './components/projects/single/project'
@@ -31,6 +32,7 @@ class App extends Component {
           )
         }}/>
 
+        <Footer />
       </div>
     );
   }
