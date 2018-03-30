@@ -13,9 +13,9 @@ const ProjectFeature = props => {
   }
 
   return(
-    <div className="project-feature">
+    <section className="project-feature">
       {mapFeature()}
-    </div>
+    </section>
   )
 }
 

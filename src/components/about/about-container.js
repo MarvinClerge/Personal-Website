@@ -1,8 +1,12 @@
 import React from 'react'
+import Header from '../header'
+import Footer from '../footer'
 import AboutCard from './about-card'
 import AboutMulti from './about-multi'
 
 const AboutContainer = props => {
+  window.scroll(0,0)
+
   function renderJourney(){
     const title = "My journey to becoming a developer"
 
@@ -47,11 +51,13 @@ const AboutContainer = props => {
   }
 
   return(
-    <div className="about-header">
-
-      {renderJourney()}
-      {renderHobbies()}
-
+    <div>
+      <Header />
+      <main className="about-header">
+        {renderJourney()}
+        {renderHobbies()}
+      </main>
+      <Footer />
     </div>
   )
 }

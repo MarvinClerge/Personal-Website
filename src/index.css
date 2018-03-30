@@ -1,6 +1,9 @@
 @import url("./css/header.css");
 @import url("./css/person.css");
 @import url("./css/footer.css");
+@import url("./css/contact.css");
+
+@import url("./css/error-page.css");
 
 @import url("./css/project/project-card.css");
 @import url("./css/project/project-header.css");

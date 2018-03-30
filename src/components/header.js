@@ -11,11 +11,8 @@ class Header extends Component {
       return(
         <div className="contact" onClick={this.endContactActive}>
           <div className="contact-content">
-            <div className="contact-exit">
-              <button>X</button>
-            </div>
 
-            <table className="contact-item-top">
+            <table>
               <tbody>
                 <tr>
                   <td className="contact-item">
@@ -50,7 +47,7 @@ class Header extends Component {
   }
 
   endContactActive = event => {
-    const allowed  = ['header', 'contact-exit']
+    const allowed  = ['header']
 
     if ( allowed.includes(event.target.parentNode.className) ) {
       document.querySelector('.contact').classList.add("fadeout")
@@ -65,12 +62,12 @@ class Header extends Component {
 
   render(){
     return (
-      <div className="header" id="header">
+      <header className="header" id="header">
         {this.renderContact()}
 
         <div className="header-main">
           <Link to="" className="header-main-link" onClick={this.startContactActive}>
-            Contact
+            Contact Me
           </Link>
 
           <Link to="/"><div className="header-logo"></div></Link>
@@ -95,7 +92,7 @@ class Header extends Component {
           </Link>
 
         </div>
-      </div>
+      </header>
     )
   }
 }

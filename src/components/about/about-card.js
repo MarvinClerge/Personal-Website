@@ -12,10 +12,10 @@ const AboutCard = props => {
   }
 
   return(
-    <div className={`about-card ${props.color}`}>
+    <section className={`about-card ${props.color}`}>
       <h2>{props.title}</h2>
       {mapContent()}
-    </div>
+    </section>
   )
 }
 

@@ -1,57 +1,21 @@
 import React, { Component } from 'react';
-import { Route } from 'react-router-dom'
-// import logo from './logo.svg';
+import { Route, Switch } from 'react-router-dom'
 
-import Header from './components/header'
-import Person from './components/person'
-import Footer from './components/footer'
-
+import Home from './components/home/home'
+import ErrorPage from './components/error-page'
 import AboutContainer from './components/about/about-container'
-
 import Project from './components/projects/single/project'
-import ProjectContainer from './components/projects/multiple/project-container'
 
 class App extends Component {
-
-  render() {
-    return (
-      <div className="app">
-        <Header />
-
-        {/* Main Page */}
-        <Route exact path="/" render={routerProps => {
-          window.scrollTo(0,0);
-          return(
-            <div>
-              <Person />
-              <ProjectContainer />
-            </div>
-          )
-        }}/>
-
-        {/* Project Page */}
-        <Route path="/project/" render={routerProps => {
-          window.scrollTo(0,0);
-          return(
-            <div>
-              <Project router={routerProps} />
-            </div>
-          )
-        }}/>
-
-        {/* About Page */}
-        <Route path="/about" render={routerProps => {
-          window.scrollTo(0,0);
-          return(
-            <div>
-              <AboutContainer />
-            </div>
-          )
-        }}/>
-
-        <Footer />
-      </div>
-    );
+  render(){
+    return(
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/project/" component={Project} />
+        <Route path="/about" component={AboutContainer} />
+        <Route component={ErrorPage} />
+      </Switch>
+    )
   }
 }
 

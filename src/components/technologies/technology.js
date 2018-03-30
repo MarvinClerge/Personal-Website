@@ -13,14 +13,14 @@ class Technology extends Component {
 
   render(){
     return(
-      <div className="technology" onClick={this.toggleActive}>
+      <section className="technology" onClick={this.toggleActive}>
         <div>
           {this.props.name}
         </div>
         <div className="technology-use">
           {this.props.use}
         </div>
-      </div>
+      </section>
     )
   }
 }

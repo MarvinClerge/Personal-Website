@@ -5,10 +5,10 @@ import MediaSlideshow from './media-slideshow'
 const MediaContainter = props => {
 
   return(
-    <div className="media-container">
+    <section className="media-container">
       <MediaSlideshow images={props.images} />
       <MediaVideo videoId={props.videoId} />
-    </div>
+    </section>
   )
 }
 
