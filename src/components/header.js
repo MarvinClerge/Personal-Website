@@ -1,100 +1,35 @@
-import React, {Component} from 'react'
-import { Link } from 'react-router-dom'
+import React from 'react'
 
-class Header extends Component {
-  state = {
-    contactActive: false
-  }
+const Header = props => {
 
-  renderContact = () => {
-    if (this.state.contactActive) {
-      return(
-        <div className="contact" onClick={this.endContactActive}>
-          <div className="contact-content">
+  return (
+    <header className="header">
+      <h1 className='header-text'>
+        <span className='header-main'>marvin clerge</span>
+        <span className='header-sub'>full stack web developer</span>
+      </h1>
 
-            <table>
-              <tbody>
-                <tr>
-                  <td className="contact-item">
-                    Email:
-                  </td>
-                  <td>
-                    <a href="mailto:clergemarvin@gmail.com">clergemarvin@gmail.com</a>
-                  </td>
-                </tr>
+      <ul className='icon-box'>
+        <li className='icon'><a href="https://github.com/MarvinClerge" target="_blank">
+          <img src={require('../images/github.png')} alt="icon"/>
+        </a></li>
 
-                <tr>
-                  <td className="contact-item">
-                    Phone:
-                  </td>
-                  <td>
-                    <a href="tel:+16318041473">(631) 804-1473</a>
-                  </td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
-      )
-    }
-  }
+        <li className='icon'><a href="https://www.linkedin.com/in/marvinclerge/" target="_blank">
+          <img src={require('../images/linkedin.png')} alt="icon"/>
+        </a></li>
 
-  startContactActive = event => {
-    event.preventDefault()
-    this.setState({
-      contactActive: true
-    })
-  }
+        <li className='icon'><a href="https://medium.com/@clergemarvin/" target="_blank">
+          <img src={require('../images/medium.png')} alt="icon"/>
+        </a></li>
 
-  endContactActive = event => {
-    const allowed  = ['header']
+        <li className='icon'><a href="https://twitter.com/MarvinClerge" target="_blank">
+          <img src={require('../images/twitter.png')} alt="icon"/>
+        </a></li>
 
-    if ( allowed.includes(event.target.parentNode.className) ) {
-      document.querySelector('.contact').classList.add("fadeout")
 
-      setTimeout(() => {
-        this.setState({
-          contactActive: false
-        })
-      } , 200)
-    }
-  }
-
-  render(){
-    return (
-      <header className="header" id="header">
-        {this.renderContact()}
-
-        <div className="header-main">
-          <Link to="" className="header-main-link" onClick={this.startContactActive}>
-            Contact Me
-          </Link>
-
-          <Link to="/"><div className="header-logo"></div></Link>
-          <Link to="/about" className="header-main-link">About Me</Link>
-        </div>
-
-        <div className="header-links">
-          <Link to="https://github.com/MarvinClerge" target="_blank" rel="noopener noreferrer">
-            <img className="header-link" src={require('../images/icons/github.png')} alt="github" />
-          </Link>
-
-          <Link to="https://www.linkedin.com/in/marvinclerge/" target="_blank" rel="noopener noreferrer">
-            <img className="header-link" src={require('../images/icons/linkedin.png')} alt="linkedin" />
-          </Link>
-
-          <Link to="https://twitter.com/MarvinClerge" target="_blank" rel="noopener noreferrer">
-            <img className="header-link" src={require('../images/icons/twitter.png')} alt="twitter" />
-          </Link>
-
-          <Link to="https://medium.com/@clergemarvin/" target="_blank" rel="noopener noreferrer">
-            <img className="header-link" src={require('../images/icons/medium.png')} alt="medium" />
-          </Link>
-
-        </div>
-      </header>
-    )
-  }
+      </ul>
+    </header>
+  )
 }
 
-export default Header
+export default Header;

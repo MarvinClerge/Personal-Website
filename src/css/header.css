@@ -1,72 +1,79 @@
 .header {
-  display: flex;
-  flex-direction: column;
-  padding: 2rem 0 2rem 0;
+  height: 45vh;
+  background: var(--bg-light);
+}
+
+.header-text {
+  text-align: center;
+  position: relative;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-weight: 400;
 }
 
 .header-main {
-  display: flex;
-  margin: 0 0 0 1rem;
-  align-items: center;
-  justify-content: center;
+  display: block;
+  animation: mainTop 1s ease-out;
 }
 
-.header-logo {
-  width: 7rem;
-  height: 7rem;
-  transition: .2s;
-  background-size: 100%;
-  background-image: url('../images/logos/small-logo.png');
+.header-sub {
+  display: block;
+  font-size: 16px;
+  animation: subTop 1s ease-out;
 }
 
-.header-logo:hover {
-  transition: .2s;
-  background-image: url('../images/logos/large-logo.png');
+.icon-box {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: iconTop 1s ease-out;
 }
 
-.header-main-link {
-  text-decoration: none;
-  margin: 0 1rem 0 1rem;
-  font-size: 1.3rem;
-  color: #676767
+.icon {
+  display: inline;
+  margin: 0 7px 0 7px;
+  transition: .2s
 }
 
-.header-links {
-  display: flex;
-  justify-content: center;
-  margin: 1rem 0 0 0;
+.icon:hover > a > img {
+  transform: scale(1.1);
 }
 
-.header-link {
-  height: 35px;
-  margin: 0 1rem 0 1rem;
-}
-
-
-@keyframes fadein {
-  from {opacity: 0;}
-  to {opacity: 1;}
-}
-
-.fadeout {
-  animation: fadeout;
-  animation-duration: .3s;
-}
-
-@keyframes fadeout {
-  from {opacity: 1;}
-  to {opacity: 0;}
-}
-
-@media screen and (max-width: 1000px) {
-  .header-main {
-    padding: 0 .5rem 1rem 0;
-    margin: 0;
+@keyframes mainTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-30px);
   }
-  .header-link {
-    margin: 0 1rem 0 1rem;
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
   }
-  .header-main-link {
-    font-size: .8rem;
+}
+
+@keyframes subTop {
+  0% {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes iconTop {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -70px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
   }
 }

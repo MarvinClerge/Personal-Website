@@ -1,0 +1,42 @@
+.about {
+  background: var(--bg-dark);
+  height: 500px;
+}
+
+.marvin-box {
+  height: 200px;
+  width: 200px;
+  position: relative;
+  top: 50%;
+  left: 20%;
+  transform: translateY(-50%);
+}
+
+.marvin {
+  border-radius: 100px;
+  border: var(--bg-light) solid;
+  height: 100%;
+}
+
+.about-text {
+  height: 400px;
+  width: 38%;
+  position: absolute;
+  left: 45%;
+  top: 65%;
+  font-weight: 400;
+  /* transform: translate(); */
+}
+
+.about-main {
+  font-size: 30px;
+  padding: 10px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.about-sub {
+  font-size: 20px;
+  text-align: center;
+  padding: 10px;
+}
