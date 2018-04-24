@@ -1,19 +1,16 @@
 .project {
   min-height: 90vh;
   background: var(--bg-light);
+  padding-top: 2rem;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-
-
 .projectcard {
-  background: var(--bg-dark);
-  border: 1px solid;
-  margin: 1rem 0 1rem 0;
+  padding: 3rem 0 2rem 0;
   display: grid;
-  grid-template-columns: 1fr 1fr
+  grid-template-columns: 1fr 1fr;
 }
 
 .projectcard-video {
@@ -33,6 +30,19 @@
   padding-left: 1rem;
 }
 
-.projectcard * {
-  border: 1px solid;
+.projectcard-info > h2 > span {
+  padding-left: 1rem;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.projectcard-title {
+  padding-top: 1rem;
+}
+
+.projectcard-paragraph {
+
+}
+
+.projectcard  {
 }
