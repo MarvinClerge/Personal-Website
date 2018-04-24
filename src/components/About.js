@@ -4,7 +4,7 @@ const About = props => {
   return(
     <section className='about'>
       <div className='marvin-box'>
-        <img src={require('../images/marvin.jpeg')} className='marvin'/>
+        <img src={require('../images/marvin.jpeg')} alt='marvin' className='marvin'/>
       </div>
 
       <div className='about-text'>
@@ -12,7 +12,7 @@ const About = props => {
         <p className='about-sub'>
           Full stack web developer looking to leverage customer service
           skills and programming skills to make an impact
-          in the web development community. 
+          in the web development community.
         </p>
 
         <p className='about-sub'>

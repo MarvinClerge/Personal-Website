@@ -10,19 +10,19 @@ const Header = props => {
       </h1>
 
       <ul className='icon-box'>
-        <li className='icon'><a href="https://github.com/MarvinClerge" target="_blank">
+        <li className='icon'><a href="https://github.com/MarvinClerge" target="_blank" rel="noopener noreferrer">
           <img src={require('../images/github.png')} alt="icon"/>
         </a></li>
 
-        <li className='icon'><a href="https://www.linkedin.com/in/marvinclerge/" target="_blank">
+        <li className='icon'><a href="https://www.linkedin.com/in/marvinclerge/" target="_blank" rel="noopener noreferrer">
           <img src={require('../images/linkedin.png')} alt="icon"/>
         </a></li>
 
-        <li className='icon'><a href="https://medium.com/@clergemarvin/" target="_blank">
+        <li className='icon'><a href="https://medium.com/@clergemarvin/" target="_blank" rel="noopener noreferrer">
           <img src={require('../images/medium.png')} alt="icon"/>
         </a></li>
 
-        <li className='icon'><a href="https://twitter.com/MarvinClerge" target="_blank">
+        <li className='icon'><a href="https://twitter.com/MarvinClerge" target="_blank" rel="noopener noreferrer">
           <img src={require('../images/twitter.png')} alt="icon"/>
         </a></li>
 

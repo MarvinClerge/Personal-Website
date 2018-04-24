@@ -1,0 +1,38 @@
+.project {
+  min-height: 90vh;
+  background: var(--bg-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+.projectcard {
+  background: var(--bg-dark);
+  border: 1px solid;
+  margin: 1rem 0 1rem 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr
+}
+
+.projectcard-video {
+  height: 315px;
+  grid-column: 1;
+  text-align: right;
+  padding-right: 1rem;
+}
+
+.projectcard-video > iframe{
+  height: 100%;
+}
+
+.projectcard-info {
+  min-height: 315px;
+  width: 500px;
+  padding-left: 1rem;
+}
+
+.projectcard * {
+  border: 1px solid;
+}
