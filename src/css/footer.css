@@ -1,0 +1,15 @@
+.footer {
+  background: var(--bg-dark);
+  text-align: center;
+  padding: 1rem;
+}
+
+.footer-text {
+  display: inline;
+}
+
+.footer-top {
+  display: inline;
+  float: right;
+  text-decoration: none;
+}
