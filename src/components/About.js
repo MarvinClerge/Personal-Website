@@ -4,7 +4,7 @@ const About = props => {
   return(
     <section className='about'>
       <div className='marvin-box'>
-        <img src={require('../images/marvin.jpeg')} alt='marvin' className='marvin'/>
+        <img src={require('../images/marvin.JPG')} alt='marvin' />
       </div>
 
       <div className='about-text'>

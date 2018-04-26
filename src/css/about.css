@@ -1,42 +1,43 @@
 .about {
   background: var(--bg-dark);
   height: 500px;
+  padding: 1rem 0 1rem 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr)
 }
 
 .marvin-box {
-  height: 200px;
-  width: 200px;
-  position: relative;
-  top: 50%;
-  left: 20%;
-  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 100%;
+  padding-right: 1rem;
 }
 
-.marvin {
-  border-radius: 100px;
-  border: var(--bg-light) solid;
-  height: 100%;
+.marvin-box > img {
+  border: 2px solid var(--bg-light);
+  border-radius: 5px;
+  height: 400px;
 }
 
 .about-text {
   height: 400px;
-  width: 38%;
-  position: absolute;
-  left: 45%;
-  top: 65%;
+  width: 500px;
   font-weight: 400;
+  grid-column: 2;
+  text-align: center;
+  padding: 0 1rem 0 1rem;
   /* transform: translate(); */
 }
 
 .about-main {
   font-size: 30px;
   padding: 10px;
-  text-align: center;
   text-transform: uppercase;
 }
 
 .about-sub {
+  text-align: left;
   font-size: 20px;
-  text-align: center;
   padding: 10px;
 }
