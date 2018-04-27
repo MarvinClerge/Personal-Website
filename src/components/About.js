@@ -8,21 +8,24 @@ const About = props => {
       </div>
 
       <div className='about-text'>
-        <h2 className='about-main'>A Passionate Coder</h2>
         <p className='about-sub'>
-          Full stack web developer looking to leverage customer service
-          skills and programming skills to make an impact
-          in the web development community.
+          Hi there, I'm Marvin Clerge.
         </p>
 
         <p className='about-sub'>
-          With experience in Ruby, Javascript and Python programming
-          and a background in Healthcare services and IT support,
-          I bring strong skills in problem-solving, technical learning
-          and customer focus.
+          I'm a full stack web developer who codes in Ruby, JavaScript, and Python.
+          I mostly make my web applications using React and Ruby on Rails.
+          I also write Python scripts and build computers.
         </p>
 
         <p className='about-sub'>
+          Since I was young I've always had a passion for coding.
+          I would write small CLI applications such as calculators and text adventures.
+          That is a passion that I have carried with me to this day.
+        </p>
+
+        <p className='about-sub'>
+          Currently, I'm seeking new opportunists to learn and grow as a developer.
         </p>
 
       </div>
