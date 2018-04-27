@@ -1,35 +1,35 @@
 .header {
-  height: 45vh;
+  height: 360px;
   background: var(--bg-light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
 }
 
 .header-text {
+  display: block;
   text-align: center;
-  position: relative;
-  top: 45%;
-  left: 50%;
-  transform: translate(-50%, -50%);
   text-transform: uppercase;
-  font-weight: 400;
 }
 
 .header-main {
   display: block;
-  animation: mainTop 1s ease-out;
+  font-size: 30px;
 }
 
 .header-sub {
   display: block;
-  font-size: 16px;
-  animation: subTop 1s ease-out;
+  font-size: 20px;
 }
 
 .icon-box {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  animation: iconTop 1s ease-out;
+  text-align: center;
+  padding-top: 1rem;
 }
 
 .icon {
@@ -40,40 +40,4 @@
 
 .icon:hover > a > img {
   transform: scale(1.1);
-}
-
-@keyframes mainTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes subTop {
-  0% {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-@keyframes iconTop {
-  0% {
-    opacity: 0;
-    transform: translate(-50%, -70px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translate(-50%, -50%);
-  }
 }

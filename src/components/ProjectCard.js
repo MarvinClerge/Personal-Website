@@ -12,7 +12,7 @@ class ProjectCard extends React.Component {
   mapFeatures(){
     return Object.keys(this.props.features).map((key, index) => {
       return (
-        <div>
+        <div key={index}>
           <h3 className='projectcard-title' >{key}</h3>
           <p className='projectcard-paragraph' >{this.props.features[key]}</p>
         </div>
@@ -22,8 +22,6 @@ class ProjectCard extends React.Component {
   }
 
   render(){
-    console.log(this.props);
-
     return (
       <div className='projectcard'>
         <div className='projectcard-video'>

@@ -8,10 +8,10 @@ const Footer = props => {
   }
 
   return(
-    <div className='footer'>
+    <footer className='footer'>
       <p className='footer-text' >Made by Marvin Clerge</p>
       <a className='footer-top'  href="" onClick={scrollTop}>go to top</a>
-    </div>
+    </footer>
   )
 }
 

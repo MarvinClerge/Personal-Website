@@ -1,5 +1,5 @@
 .project {
-  min-height: 90vh;
+  min-height: 1300px;
   background: var(--bg-light);
   padding-top: 2rem;
   display: flex;
@@ -34,6 +34,10 @@
   padding-left: 1rem;
   font-size: 14px;
   font-weight: 400;
+}
+
+.projectcard-info > h2 > span > a {
+  color: #3985cc;
 }
 
 .projectcard-title {
