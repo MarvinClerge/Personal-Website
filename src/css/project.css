@@ -37,7 +37,7 @@
 }
 
 .projectcard-info > h2 > span > a {
-  color: #3985cc;
+  color: var(--link);
 }
 
 .projectcard-title {

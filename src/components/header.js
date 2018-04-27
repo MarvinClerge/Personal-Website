@@ -29,6 +29,9 @@ const Header = props => {
           </a></li>
         </ul>
 
+
+        <p className='email'><a href="mailto:clergemarvin@gmail.com?Subject=Hi Marvin!">clergemarvin@gmail.com</a></p>
+
       </div>
     </header>
   )
