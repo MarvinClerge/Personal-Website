@@ -20,7 +20,7 @@
   padding-right: 1rem;
 }
 
-.projectcard-video > iframe{
+.projectcard-video > iframe {
   height: 100%;
 }
 
@@ -44,9 +44,24 @@
   padding-top: 1rem;
 }
 
-.projectcard-paragraph {
+@media all and (max-width:425px) {
+  .projectcard {
+    padding-bottom: .5rem;
+    padding-top: 1.5rem;
+    grid-template-columns: none;
+    grid-template-rows: 335px 1fr;
+  }
+  .projectcard-video {
+    padding: 0;
+    text-align: center;
+  }
+  .projeccard-video > iframe {
 
-}
-
-.projectcard  {
+  }
+  .projectcard-info {
+    padding: 1rem;
+    width: 100%;
+  }
+  .projectcard-title {
+  }
 }

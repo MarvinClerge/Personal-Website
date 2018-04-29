@@ -26,7 +26,7 @@ class ProjectCard extends React.Component {
       <div className='projectcard'>
         <div className='projectcard-video'>
           <iframe
-            width="560"
+            width={window.outerWidth - 50}
             height="315"
             src={`https://www.youtube.com/embed/${this.props.videoID}`}
             title={this.props.name}

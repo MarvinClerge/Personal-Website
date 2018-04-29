@@ -8,7 +8,7 @@ const About = props => {
       </div>
 
       <div className='about-text'>
-        <p className='about-sub'>
+        <p className='about-sub' id='about-intro'>
           Hi there, I'm Marvin Clerge.
         </p>
 
