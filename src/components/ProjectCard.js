@@ -18,7 +18,17 @@ class ProjectCard extends React.Component {
         </div>
       )
     })
+  }
 
+  videoWidth(){
+    let width = window.outerWidth
+    if (width <= 425) {
+      return width - 50
+    } else if (width <= 768) {
+      return width - 300
+    } else {
+      return 560
+    }
   }
 
   render(){
@@ -26,7 +36,7 @@ class ProjectCard extends React.Component {
       <div className='projectcard'>
         <div className='projectcard-video'>
           <iframe
-            width={window.outerWidth - 50}
+            width={this.videoWidth()}
             height="315"
             src={`https://www.youtube.com/embed/${this.props.videoID}`}
             title={this.props.name}
